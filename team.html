@@ -5,24 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="team.css">
+    <script src="team.js" defer></script>
     <title>Tiimileht</title>
 </head>
 <body>
     <h2>Tiimiliikmed</h2>
     <div id="teamSlider">
         <br>
-        <div id="previousMember">
-            <button id="previous" class="sliderControl">←</button>
-        </div>
+        <button id="previous" class="sliderControl">←</button>
         <div id="teamMember">
-            <img src="pics/liige1.png" alt="tiimi liige">
+            <img id="activePic" src="pics/liige11.png" alt="tiimi liige">
             <br>
-            <caption id="memberName">May Denless</caption>
-            <p>Lorem ipsum dolores</p>
+            <p id="memberName">May Denless</p>
+            <p id="memberBio">Lorem ipsum dolores</p>
         </div>
-        <div id="nextMember">
-            <button id="next" class="sliderControl">→</button>
-        </div>
+        <button id="next" class="sliderControl">→</button>
     </div>
     <div id="youtube">
         <h2>Lemmik muusikavideo</h2>
