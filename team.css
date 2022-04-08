@@ -1,0 +1,22 @@
+#teamSlider {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+#teamMember {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sliderControl {
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+    background-color: rgb(186, 213, 236);
+    font-size: 17px;
+}
