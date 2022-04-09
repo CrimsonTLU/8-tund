@@ -2,6 +2,7 @@ let firstMember = document.querySelector('#activePic');
 firstMember.classList.add('fade-in');
 let memberName = document.querySelector('#memberName');
 let memberBio = document.querySelector('#memberBio');
+let pictureSrc = 'pictures/liige1';
 
 let picNum = 1;
 
@@ -12,14 +13,14 @@ console.log(memberBio);
 document.querySelector('#next').addEventListener('click', (function(){
     if(picNum < 4){
         picNum += 1;
-        firstMember.src = 'pics/liige1' + picNum + '.png';
+        firstMember.src = pictureSrc + picNum + '.png';
     }
     else{
-        firstMember.src = 'pics/liige1' + picNum + '.png';
+        firstMember.src = pictureSrc + picNum + '.png';
         picNum = 1;
     }
     if(picNum == 1){
-        firstMember.src = 'pics/liige1' + picNum + '.png';
+        firstMember.src = pictureSrc + picNum + '.png';
     }
     console.log(picNum);
 
@@ -40,10 +41,10 @@ document.querySelector('#next').addEventListener('click', (function(){
 document.querySelector('#previous').addEventListener('click', (function(){
     if(picNum > 1){
         picNum -= 1;
-        firstMember.src = 'pics/liige1' + picNum + '.png';
+        firstMember.src = pictureSrc + picNum + '.png';
     } else {
         picNum = 4;
-        firstMember.src = 'pics/liige1' + picNum + '.png';
+        firstMember.src = pictureSrc + picNum + '.png';
     }
     console.log(picNum);
 
